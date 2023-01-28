@@ -1,0 +1,220 @@
+img,
+video {
+  max-width: 100%;
+  display: block;
+}
+html,
+body {
+  height: 100%;
+}
+.center {
+  width: 80%;
+  margin: 0 auto;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+section.video-bg video {
+  margin: 0 auto;
+  width: 100%;
+}
+section.company-info {
+  background-color: #dedede;
+  padding: 30px 0;
+}
+section.company-info .title {
+  text-align: center;
+  position: relative;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+}
+section.company-info .title h2.cn {
+  font-size: 30px;
+  font-weight: bold;
+  color: #ef4136;
+  margin-bottom: 6px;
+}
+section.company-info .title h3.en {
+  color: #999;
+}
+section.company-info .title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 1px;
+  background-color: #999;
+}
+section.company-info .note {
+  line-height: 2;
+  max-width: 753px;
+  color: #1f2b45;
+  text-align: center;
+}
+section.cont2 {
+  background-color: #1f2b45;
+  color: #f9ef77;
+  padding: 30px 0;
+}
+section.cont2 .cont2-box {
+  display: flex;
+  align-items: center;
+}
+section.cont2 .cont2-box .left-info,
+section.cont2 .cont2-box .right-img {
+  width: 50%;
+}
+section.cont2 .cont2-box .left-info img,
+section.cont2 .cont2-box .right-img img {
+  margin: 0 auto;
+}
+section.cont2 .cont2-box .left-info .cont2-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+section.cont2 .cont2-box .left-info .cont2-list .cont2-item {
+  width: calc(100% / 3);
+  padding: 30px 0;
+}
+section.cont2 .cont2-box .left-info .cont2-list .cont2-item .num {
+  text-align: center;
+}
+section.cont2 .cont2-box .left-info .cont2-list .cont2-item .num span:first-child {
+  font-size: 40px;
+}
+section.cont2 .cont2-box .left-info .cont2-list .cont2-item p {
+  text-align: center;
+}
+section.company-adv {
+  background-color: #1f2b45;
+  padding: 30px 0;
+}
+section.company-adv .title-module {
+  text-align: center;
+  position: relative;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+}
+section.company-adv .title-module h2.cn {
+  font-size: 30px;
+  font-weight: bold;
+  color: #ef4136;
+  margin-bottom: 6px;
+  color: #f9ef77;
+}
+section.company-adv .title-module h3.en {
+  color: #f9ef77;
+}
+section.company-adv .title-module::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 1px;
+  background-color: #f9ef77;
+}
+section.company-adv .adv-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+section.company-adv .adv-list .adv-item {
+  margin: 0 40px 80px;
+  width: calc(50% - 80px);
+  text-align: center;
+}
+section.company-adv .adv-list .adv-item .img {
+  margin-bottom: 10px;
+}
+section.company-adv .adv-list .adv-item .img img {
+  margin: 0 auto;
+}
+section.company-adv .adv-list .adv-item .title {
+  font-size: 20px;
+  color: #f9ef77;
+  margin-bottom: 10px;
+}
+section.company-adv .adv-list .adv-item p {
+  color: white;
+}
+@media screen and (max-width: 1080px) {
+  section.company-adv .adv-list .adv-item {
+    margin: 0 20px 40px;
+    width: calc(50% - 40px);
+  }
+}
+@media screen and (max-width: 768px) {
+  section.company-info .title {
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  section.company-info .title h2.cn {
+    font-size: 24px;
+  }
+  section.company-info .title h3.en {
+    font-size: 14px;
+  }
+  section.company-info .title::after {
+    width: 80px;
+  }
+  section.company-info .note {
+    width: 90%;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  section.cont2 .cont2-box {
+    flex-wrap: wrap;
+  }
+  section.cont2 .cont2-box .left-info,
+  section.cont2 .cont2-box .right-img {
+    width: 100%;
+  }
+  section.cont2 .cont2-box .left-info .cont2-list {
+    margin-bottom: 20px;
+  }
+  section.cont2 .cont2-box .left-info .cont2-list .cont2-item {
+    padding: 15px 0;
+  }
+  section.cont2 .cont2-box .left-info .cont2-list .cont2-item .num {
+    text-align: center;
+  }
+  section.cont2 .cont2-box .left-info .cont2-list .cont2-item .num span:first-child {
+    font-size: 24px;
+  }
+  section.cont2 .cont2-box .left-info .cont2-list .cont2-item p {
+    text-align: center;
+    font-size: 14px;
+  }
+  section.company-adv {
+    padding: 20px 0;
+  }
+  section.company-adv .title-module h2.cn {
+    font-size: 24px;
+  }
+  section.company-adv .title-module h3.en {
+    font-size: 14px;
+  }
+  section.company-adv .adv-list {
+    width: 96%;
+  }
+  section.company-adv .adv-list .adv-item {
+    margin: 0 5px 10px;
+    width: calc(50% - 10px);
+  }
+  section.company-adv .adv-list .adv-item .img {
+    margin-bottom: 10px;
+  }
+  section.company-adv .adv-list .adv-item .title {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  section.company-adv .adv-list .adv-item p {
+    font-size: 12px;
+  }
+}

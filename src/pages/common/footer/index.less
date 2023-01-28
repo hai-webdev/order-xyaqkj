@@ -1,0 +1,59 @@
+@import "../../../assets/global.less";
+footer{
+    padding: 20px 0;
+    background-color: #dedede;
+    .cont{
+        display: flex;
+        flex-wrap: wrap;
+        dl.links{
+            width: 20%;
+        }
+        dl.contact,
+        ul.qrcode-list{
+            width: 40%;
+        }
+        dl{
+            color: #666;
+            dt{
+                font-size: 18px;
+                margin-bottom: 15px;
+            }
+            dd{
+                margin-bottom: 10px;
+                font-size: 14px;
+                span{
+                    font-size: 24px;
+                    color: #000;
+                    font-weight: bold;
+                }
+            }
+        }
+        .qrcode-list{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            .qrcode-item{
+                width: 50%;
+                max-width: 120px;
+                margin: 0 30px 20px;
+                img{
+                    max-width: 100%;
+                    margin-bottom: 10px;
+                }
+                p{
+                    font-size: 14px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+.copyright{
+    background-color: #dedede;
+    border-top: 1px solid #000;
+    padding: 10px 0;
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+}
+@import "./1080.less" screen and (max-width:1080px);

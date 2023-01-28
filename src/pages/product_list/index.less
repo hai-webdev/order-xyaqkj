@@ -1,0 +1,64 @@
+@import "../../assets/global.less";
+.title {
+  text-align: center;
+  position: relative;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+  h2.cn {
+    font-size: 30px;
+    font-weight: bold;
+    color: @orange;
+    margin-bottom: 6px;
+  }
+  h3.en {
+    color: #999;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 1px;
+    background-color: #999;
+  }
+}
+section.product {
+  padding-top: 50px;
+  .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    .product-item {
+      width: 25%;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-sizing: border-box;
+      transition: .6s;
+      a {
+        display: block;
+        .img {
+          padding-top: 100%;
+          .bgImg(contain);
+          margin-bottom: 10px;
+          transition: .6s;
+        }
+        p {
+          text-align: center;
+        }
+      }
+      &:hover {
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+          .img{
+              transform: scale(1.05);
+          }
+          a{
+              color: @subColor;
+          }
+      }
+    }
+  }
+}
+
+@import "./768.less" screen and (max-width: 768px);

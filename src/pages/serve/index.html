@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- 引入公共页头 -->
+  <%= require("html-loader!../common/header/index.html") %>
+    <section class="banner" style="background-image: url(/public/img/serve-banner.jpg);">
+      <h2>售后服务</h2>
+    </section>
+    <section class="info">
+      <div class="center info-main">
+        <div class="left">
+          <a href="" class="serve-link">
+            <i class="iconfont icon-qq1"></i>
+            客服一</a>
+          <a href="" class="serve-link">
+            <i class="iconfont icon-qq1"></i>
+            客服二</a>
+        </div>
+        <div class="middle">
+          <p>联系邮箱：coco@gdxyfz.net</p>
+          <p>工作时间：周一到周六09:00-18:00</p>
+          <p>联系地址：深圳市宝安区西乡街道共和工业路29号3层</p>
+        </div>
+        <div class="right">
+          <div class="qrcode">
+            <img src="/public/img/wx02.webp" alt="微信公众号">
+            <p>微信公众号</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 引入公共页尾 -->
+    <%= require("html-loader!../common/footer/index.html") %>
+    <%= require("html-loader!../common/aside/index.html") %>
+</body>
+
+</html>

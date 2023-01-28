@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- 引入公共页头 -->
+  <%= require("html-loader!../common/header/index.html") %>
+    <section class="banner">
+      <img src="/public/img/news-banner.jpg" alt="">
+    </section>
+    <section class="news-content center">
+      <h1 class="title">住建部接管消防的两个信号</h1>
+      <div class="date">2019-03-20 16:36</div>
+      <div class="main-cont">
+        <p>
+          这份文件的第7点：加强房屋使用安全管理。指导房屋产权人和管理单位加强对房屋公共通道、公共活动场所、地下室等重点部位的管理，督促受委托的专业服务机构加强对消防、电梯等专业设施设备的维修养护，及时消除安全隐患。
+        </p>
+      </div>
+      <ul class="next_prev">
+        <li>
+          <span>上一篇</span>
+          <a href="">琼色：深化“智慧消防”建设，继续推广安装独立报警、简易喷淋设施</a>
+        </li>
+        <li>
+          <span>下一篇</span>
+          <a href="">住建部接管消防的两个信号</a>
+        </li>
+      </ul>
+    </section>
+    <!-- 引入公共页尾 -->
+    <%= require("html-loader!../common/footer/index.html") %>
+      <%= require("html-loader!../common/aside/index.html") %>
+</body>
+
+</html>

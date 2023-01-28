@@ -1,0 +1,84 @@
+@import "../../assets/global.less";
+section.banner{
+  img{
+    width: 100%;
+  }
+}
+section.message {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: @greyBg;
+  text-align: center;
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    label {
+      text-align: left;
+      span {
+        display: block;
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 12px;
+        i {
+          margin-left: 10px;
+          color: #f00;
+          vertical-align: bottom;
+        }
+      }
+    }
+    label.text {
+      margin: 0 10px 20px;
+      width: calc(100% / 3 - 20px);
+      input {
+        width: 100%;
+        background-color: #cccccc26;
+        border: none;
+        outline: none;
+        color: #333;
+        font-size: 13px;
+        line-height: 44px;
+        height: 44px;
+        padding-left: 18px;
+        box-sizing: border-box;
+        &::placeholder {
+          color: #999;
+        }
+      }
+    }
+    label.textarea {
+      margin: 0 10px 40px;
+      width: calc(100% - 20px);
+      textarea {
+        width: 100%;
+        height: 100px;
+        background-color: #cccccc26;
+        border: none;
+        outline: none;
+        color: #333;
+        font-size: 13px;
+        resize: none;
+        padding-left: 18px;
+        padding-top: 18px;
+        box-sizing: border-box;
+        &::placeholder {
+          color: #999;
+        }
+      }
+    }
+    button {
+      margin-left: 10px;
+      width: 100%;
+      max-width: 300px;
+      height: 44px;
+      line-height: 44px;
+      font-size: 16px;
+      border: none;
+      outline: none;
+      color: #fff;
+      cursor: pointer;
+      background-color: #1e50ae;
+    }
+  }
+}
+
+@import "./768.less" screen and (max-width:768px);
